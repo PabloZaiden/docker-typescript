@@ -4,5 +4,4 @@ RUN npm install --global typescript package-to-tsd tsd
 
 WORKDIR /app
 
-CMD bash
-ENTRYPOINT bash
+ENTRYPOINT /bin/sh
