@@ -1,0 +1,5 @@
+FROM pablozaiden/docker-typescript
+
+ONBUILD COPY . /app
+ONBUILD RUN npm install
+ONBUILD RUN tsc -p .
