@@ -1,4 +1,4 @@
-FROM pablozaiden/docker-typescript
+FROM pablozaiden/typescript
 
 ONBUILD COPY . /app
 ONBUILD RUN npm install
