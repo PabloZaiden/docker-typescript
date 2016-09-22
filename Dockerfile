@@ -1,6 +1,6 @@
 FROM node:6-slim
 
-RUN npm install --global typescript@beta
+RUN npm install --global typescript
 
 WORKDIR /app
 
