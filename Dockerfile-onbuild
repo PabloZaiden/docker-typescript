@@ -1,7 +1,7 @@
 FROM pablozaiden/typescript
 
 ONBUILD COPY . /app
-ONBUILD RUN npm install
+ONBUILD RUN yarn install
 # [HACK]: Until the types definition work properly, remove incompatible node definitions
 ONBUILD RUN mv /app/node_modules/@types/node /
 ONBUILD RUN rm -rf `find /app/node_modules/@types/ -iname node`
